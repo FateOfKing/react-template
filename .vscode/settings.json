@@ -1,0 +1,66 @@
+{
+  "editor.detectIndentation": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+  },
+  "editor.formatOnSave": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "editor.quickSuggestions": {
+    //开启自动显示建议
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.tabSize": 2,
+  // eslint的配置
+  "eslint.options": {
+    "overrideConfigFile": ".eslintrc.js",
+  },
+  // 使用eslint检查的文件类型
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html"
+  ],
+  "eslint.codeAction.disableRuleComment": {},
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "[scss,css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  // "[jsonc]": {
+  //     "editor.defaultFormatter": "vscode.json-language-features"
+  // },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDelete": false,
+  "eslint.format.enable": true,
+  "workbench.startupEditor": "none",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "files.eol": "\n",
+  "fileheader.configObj": {
+    "autoAdd": false,
+    "autoAlready": false,
+    "annotationStr": {
+      "use": false
+    },
+    "prohibitAutoAdd": [
+      "json",
+      "md",
+      "js",
+      "ts",
+      "jsx",
+      "tsx"
+    ], // 默认开启
+    "createHeader": "If false, the import statements will be excluded while using the Go to Symbol in File feature. Not applicable when using the language server."
+  },
+  "[typescriptreact]": {
+    // "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
